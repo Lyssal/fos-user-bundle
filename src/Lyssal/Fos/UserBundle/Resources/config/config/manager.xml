@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="fos_user.user_manager.class">Lyssal\Fos\UserBundle\Doctrine\UserManager</parameter>
+        <parameter key="fos_user.group_manager.class">Lyssal\Fos\UserBundle\Doctrine\GroupManager</parameter>
+
+        <parameter key="lyssal.fos.user.manager.title.class">Lyssal\Fos\UserBundle\Manager\TitleManager</parameter>
+        <parameter key="lyssal.fos.user.manager.user.class">Lyssal\Fos\UserBundle\Manager\UserManager</parameter>
+        <parameter key="lyssal.fos.user.manager.group.class">Lyssal\Fos\UserBundle\Manager\GroupManager</parameter>
+    </parameters>
+    <services>
+        <service id="lyssal.fos.user.manager.title" class="%lyssal.fos.user.manager.title.class%">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%lyssal.fos.user.entity.title.class%</argument>
+        </service>
+        <service id="lyssal.fos.user.manager.user" class="%lyssal.fos.user.manager.user.class%">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%lyssal.fos.user.entity.user.class%</argument>
+        </service>
+        <service id="lyssal.fos.user.manager.group" class="%lyssal.fos.user.manager.group.class%">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%lyssal.fos.user.entity.group.class%</argument>
+        </service>
+    </services>
+</container>

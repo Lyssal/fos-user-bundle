@@ -1,0 +1,24 @@
+{
+    "name" : "lyssal/fos-user-bundle",
+    "description" : "An extension for the FOS user bundle.",
+    "license" : "proprietary",
+    "keywords" : [
+        "user"
+    ],
+    "type" : "symfony-bundle",
+    "authors" : [{
+            "name" : "Rémi Leclerc",
+            "homepage" : "http://www.lyssal.com/"
+        }
+    ],
+    "require" : {
+        "symfony/security-bundle" : ">=2.7|~3",
+        "lyssal/doctrine-orm-bundle" : "~0.1",
+        "friendsofsymfony/user-bundle" : "~1.3"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Lyssal\\Fos\\UserBundle" : "src"
+        }
+    }
+}

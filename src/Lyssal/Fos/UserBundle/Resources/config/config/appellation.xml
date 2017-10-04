@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="lyssal.fos.user.appellation.title.class">Lyssal\Fos\UserBundle\Appellation\TitleAppellation</parameter>
+        <parameter key="lyssal.fos.user.appellation.user.class">Lyssal\Fos\UserBundle\Appellation\UserAppellation</parameter>
+        <parameter key="lyssal.fos.user.appellation.group.class">Lyssal\Fos\UserBundle\Appellation\GroupAppellation</parameter>
+    </parameters>
+    <services>
+        <service id="lyssal.fos.user.appellation.title" class="%lyssal.fos.user.appellation.title.class%">
+            <argument type="service" id="router" />
+            <tag name="lyssal.appellation" />
+        </service>
+        <service id="lyssal.fos.user.appellation.user" class="%lyssal.fos.user.appellation.user.class%">
+            <argument type="service" id="router" />
+            <tag name="lyssal.appellation" />
+        </service>
+        <service id="lyssal.fos.user.appellation.group" class="%lyssal.fos.user.appellation.group.class%">
+            <argument type="service" id="router" />
+            <tag name="lyssal.appellation" />
+        </service>
+    </services>
+</container>

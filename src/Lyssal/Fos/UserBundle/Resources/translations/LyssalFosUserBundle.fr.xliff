@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="">
+        <body>
+            <trans-unit id="abbreviation">
+                <source>abbreviation</source>
+                <target>Abbréviation</target>
+            </trans-unit>
+            <trans-unit id="created">
+                <source>created</source>
+                <target>Date de création</target>
+            </trans-unit>
+            <trans-unit id="email">
+                <source>email</source>
+                <target>Adresse électronique</target>
+            </trans-unit>
+            <trans-unit id="enabled">
+                <source>enabled</source>
+                <target>Activé</target>
+            </trans-unit>
+            <trans-unit id="groups">
+                <source>groups</source>
+                <target>Groupes</target>
+            </trans-unit>
+            <trans-unit id="last_login">
+                <source>last_login</source>
+                <target>Date de dernière connexion</target>
+            </trans-unit>
+            <trans-unit id="password">
+                <source>password</source>
+                <target>Mot de passe</target>
+            </trans-unit>
+            <trans-unit id="plain_password">
+                <source>plain_password</source>
+                <target>Mot de passe</target>
+            </trans-unit>
+            <trans-unit id="roles">
+                <source>roles</source>
+                <target>Rôles</target>
+            </trans-unit>
+            <trans-unit id="title">
+                <source>title</source>
+                <target>Civilité</target>
+            </trans-unit>
+            <trans-unit id="updated">
+                <source>updated</source>
+                <target>Date de modification</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
